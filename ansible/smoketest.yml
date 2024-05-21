@@ -1,0 +1,10 @@
+- hosts: worldcorp
+  become: yes
+  
+  tasks:
+  - name: Install useless packages
+    ansible.builtin.package:
+      name:
+        - cowsay
+        - fortune
+      state: absent

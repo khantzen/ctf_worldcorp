@@ -1,0 +1,13 @@
+---
+# tasks file for install-nginx
+
+- name: Install nginx
+  package:
+    name:
+      - nginx
+    state: present
+
+- name: Remove default configuration
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent

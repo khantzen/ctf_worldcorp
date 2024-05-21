@@ -1,0 +1,14 @@
+---
+# tasks file for setup-nginx-configuration
+
+- name: Upload prod configuration
+  copy:
+    src: "{{ role_path }}/files/prod.conf"
+    dest: "/etc/nginx/sites-enabled/00-prod.conf"
+
+- name: Upload preprod configuration
+  copy:
+    src: "{{ role_path }}/files/preprod.conf"
+    dest: "/etc/nginx/sites-enabled/01-preprod.conf"
+
+
