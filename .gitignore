@@ -1,3 +1,4 @@
 inventory.yml
 *.key
 worldcorp_landing
+artifact/*.tar.gz
