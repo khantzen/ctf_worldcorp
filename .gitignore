@@ -1,5 +1,6 @@
 inventory.yml
 *.key
+*.pub
 worldcorp_landing
-artifact/*.tar.gz
+ansible/artifact/*.tar.gz
 .venv
