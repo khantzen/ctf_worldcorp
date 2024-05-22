@@ -5,3 +5,4 @@
     - role: install-nginx
     - role: upload-worldcorp-site
     - role: setup-nginx-configuration
+    - role: create-vm-user
