@@ -6,3 +6,4 @@
     - role: upload-worldcorp-site
     - role: setup-nginx-configuration
     - role: create-vm-user
+    - role: collaborators-file-system

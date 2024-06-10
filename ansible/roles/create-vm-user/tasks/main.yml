@@ -1,14 +1,21 @@
 ---
 # tasks file for create-vm-user
 
-- name: Create vm user
-  user:
-    name: "worldracoon"
-    password: "$6$QyJTpC/8swpHEj4m$aP08vWZBW0Z29P9O4sluDh2aVRjJ8Q3dWPNSbVnWi.RmzOauGYWH/YL0WwNmQob9r7UAMwW9NqaEmhvK21Z3c/"
-    state: present
-    shell: /bin/bash
-
 - name: Setup ssh configuration
   copy:
     src: "{{ role_path }}/files/00-user-ssh"
     dest: "/etc/ssh/sshd_config.d/00-user-ssh.conf"
+
+- name: Create monitor group
+  group:
+    name: monitor
+    state: present
+
+- name: Create vm user
+  user:
+    name: "worldracoon"
+    password: "$6$QyJTpC/8swpHEj4m$aP08vWZBW0Z29P9O4sluDh2aVRjJ8Q3dWPNSbVnWi.RmzOauGYWH/YL0WwNmQob9r7UAMwW9NqaEmhvK21Z3c/"
+    groups: monitor
+    state: present
+    shell: /bin/bash
+    append: yes

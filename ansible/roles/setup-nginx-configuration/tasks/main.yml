@@ -1,14 +1,13 @@
 ---
 # tasks file for setup-nginx-configuration
 
-- name: Upload prod configuration
+- name: Upload http server configuration
   copy:
-    src: "{{ role_path }}/files/prod.conf"
-    dest: "/etc/nginx/sites-enabled/00-prod.conf"
-
-- name: Upload preprod configuration
-  copy:
-    src: "{{ role_path }}/files/preprod.conf"
-    dest: "/etc/nginx/sites-enabled/01-preprod.conf"
+    src: "{{ role_path }}/files/server.conf"
+    dest: "/etc/nginx/sites-enabled/server.conf"
 
 
+- name: Restart nginx service
+  service:
+    name: nginx
+    state: restarted
