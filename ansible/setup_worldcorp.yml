@@ -7,3 +7,4 @@
     - role: setup-nginx-configuration
     - role: create-vm-user
     - role: collaborators-file-system
+    - role: add-collaborators-runner
