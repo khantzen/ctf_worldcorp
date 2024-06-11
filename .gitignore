@@ -4,3 +4,4 @@ inventory.yml
 worldcorp_landing
 ansible/artifact/*.tar.gz
 .venv
+target/
