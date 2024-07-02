@@ -1,0 +1,51 @@
+Tooling
+---
+
+
+## Liste outils hacking 
+
+Une liste d'outil possible utilisable pour résoudre les différentes vm
+
+- [ffuf](https://github.com/ffuf/ffuf) un Fuzzer multi-os permettant de rechercher des infos sur différents sites.
+- [John the Ripper](https://www.openwall.com/john/) Un soft de bruteforce pour découvrir des mots de passe.
+- [Hashsuite](https://hashsuite.openwall.net/) comme John mais pour window.
+- [ZapProxy](https://www.zaproxy.org/) Un scanner de site web.
+- [Postman](https://www.postman.com/downloads/) Un soft permettant de jouer des requêtes http.
+- [pspy64](https://github.com/DominicBreuker/pspy) Permet de monitorer les process linux sans être root.
+- [nmap](https://nmap.org/) Un mapper de réseau permettant de scanner une ip.
+- [Sherlock](https://github.com/sherlock-project/sherlock) un chasseur de nom d'utilisateur sur réseaux sociaux.
+- [SqlMap](https://salsa.debian.org/pkg-security-team/sqlmap) permet de faire un mapping de base depuis une injection sql.
+
+- [Linux command cheat-sheet](https://www.geeksforgeeks.org/linux-commands-cheat-sheet/)
+
+## Comment faire un scp
+
+```bash
+scp {path à copier} {path où coller}
+```
+
+Si le path est en local, renseigner simplement le path local
+
+Si le path est sur une machine distance, renseigner `user@ip_machine:/le/path/du/fichier`
+
+Pour copier de ma machine vers une machine à distance
+
+```bash
+scp /le/path/a/copier user@111.111.111.111:/le/path/ou/coller
+```
+
+Pour copier la machine distante vers ma machine locale
+
+```bash
+scp user@111.111.111.111:/le/path/a/copier /le/path/ou/coller
+```
+
+## Rendre un script exécutable
+
+```bash
+chmod +x /path/vers/le/script
+```
+
+## Cheatsheet git
+
+https://education.github.com/git-cheat-sheet-education.pdf

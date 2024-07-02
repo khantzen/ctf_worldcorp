@@ -1,0 +1,12 @@
+ffuf
+john
+pspy
+nmap
+sherlock
+sqlmap
+openssh-client
+git 
+vim
+wget
+curl
+exiftool
