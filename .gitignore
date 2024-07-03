@@ -6,3 +6,5 @@ ansible/artifact/*.tar.gz
 .venv
 target/
 .idea
+
+providers.tf
