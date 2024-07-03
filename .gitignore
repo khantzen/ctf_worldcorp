@@ -8,3 +8,5 @@ target/
 .idea
 
 providers.tf
+.terraform
+.terraform.lock.hcl
