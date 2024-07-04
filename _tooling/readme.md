@@ -53,7 +53,7 @@ Ainsi tout ce qui sera sauvegardé dans `/formation/my-data` depuis le conteneur
 
 > Vous pouvez installer n'importe quel [package kali](https://www.kali.org/tools/) dans le conteneur via la commande `apt install <package name>`
 
-> :warning: Si vous quittez le conteneur il faudra relancer la commande
+> :warning: Si vous êtes amenés à supprimer le conteneur il faudra réinstaller les outils que vous avez installé de cette manière :warning:
 
 ## Comment faire un scp
 
