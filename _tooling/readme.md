@@ -20,22 +20,7 @@ Une liste d'outil possible utilisable pour résoudre les différentes vm
 
 ### Image docker
 
-Une image docker est disponible `kha91/ctf-tooling-worldcorp:202407041130` elle contient les outils suivants
-
-```txt
-ffuf
-john
-pspy
-nmap
-sherlock
-sqlmap
-openssh-client
-git 
-vim
-wget
-curl
-exiftool
-```
+Une image docker est disponible `kha91/ctf-tooling-worldcorp:202407041130` elle contient les outils de la liste précédente exécutables via ligne de commande, ainsi que les listes de mots du dossier `wordlists` de ce dépôt.
 
 L'image peut se récupérer depuis dockerhub
 
@@ -56,6 +41,12 @@ docker run --rm -it \
   -v /path/vers/mon/dossier/my-data:/formation/my-data \
   kha91/ctf-tooling-worldcorp:202407041130 \
   bash
+```
+
+Pour voir les outils pré-installés dans l'image
+
+```bash
+cat packages.txt
 ```
 
 Ainsi tout ce qui sera sauvegardé dans `/formation/my-data` depuis le conteneur sera persisté sur votre pc.
