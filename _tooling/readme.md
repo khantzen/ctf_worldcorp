@@ -43,6 +43,12 @@ L'image peut se récupérer depuis dockerhub
 docker pull kha91/ctf-tooling-worldcorp:202407041130
 ```
 
+Vous pouvez également la construire vous même depuis ce dépot git.
+
+```bash
+docker built -it ctf-tooling-worldcorp:my-version .
+```
+
 Créer un dossier `my-data` sur votre pc et lancez le conteneur via la commande suivante
 
 ```bash
@@ -55,7 +61,7 @@ docker run --rm -it \
 Ainsi tout ce qui sera sauvegardé dans `/formation/my-data` depuis le conteneur sera persisté sur votre pc.
 
 > Vous pouvez installer n'importe quel [package kali](https://www.kali.org/tools/) dans le conteneur via la commande `apt install <package name>`
->
+
 > :warning: Si vous quittez le conteneur il faudra relancer la commande
 
 ## Comment faire un scp
