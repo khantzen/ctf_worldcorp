@@ -83,6 +83,12 @@ scp user@111.111.111.111:/le/path/a/copier /le/path/ou/coller
 chmod +x /path/vers/le/script
 ```
 
+## Télécharger un directory web
+
+```bash
+wget -r -np -nH http://$TARGET_IP/path/to/directory
+```
+
 ## Cheatsheet git
 
 https://education.github.com/git-cheat-sheet-education.pdf
